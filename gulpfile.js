@@ -15,8 +15,8 @@ const imagemin = require('gulp-imagemin');
 function images() {
     return pipeline (
         src('./app/images/*'),
-        (imagemin()),
-        (dest('./build/images'))
+        imagemin(),
+        dest('./build/images')
     )
 }
 
