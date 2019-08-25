@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link rel='stylesheet' href='build/css/Roboto-font.css'>-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,900&display=swap&subset=cyrillic"
+          rel="stylesheet">
     <link rel="stylesheet" href="build/css/index.css">
     <title>Mikocin</title>
 </head>
@@ -11,21 +14,21 @@
     <div class="container">
         <div class="logo">
             <img src="build/images/great-circle.png" alt="circle">
-            <img src="build/images/small-circle.png" alt="s-circle">
+            <img id="image" src="build/images/small-circle.png" alt="s-circle">
             <p>Микоцин</p>
         </div>
         <div class="info">
             <div class="item">
                 <img src="build/images/icon-1.png" alt="NumberOne">
-                <p>№1 Для избавления от любого типа грибка</p>
+                <p>№1 Для избавления от<br>любого типа грибка</p>
             </div>
             <div class="item">
                 <img src="build/images/icon-2.png" alt="Protected">
-                <p>Рекомендован дерматологами </p>
+                <p>Рекомендован<br>дерматологами </p>
             </div>
             <div class="item">
                 <img src="build/images/icon-3.png" alt="Clients">
-                <p>13000+ довольных клиентов за 2018 год</p>
+                <p>13000+ довольных<br> клиентов за 2018 год</p>
             </div>
         </div>
     </div>
@@ -33,26 +36,40 @@
 <main>
     <section class="first">
         <div class="container">
+            <div class="img-container">
+                <img class="legs" src="build/images/legs.png" alt="">
+                <div class="circle-are">
+                    <div class="circle-border">
+                        <img src="build/images/border.png" alt="">
+                    </div>
+                    <div class="circle"></div>
+
+                </div>
+            </div>
             <div class="info-block">
-                <h1>Комплексное избавление от грибка — <span>изнутри</span> и <span>снаружи</span></h1>
-                <div class="complex">
-                    <div class="circle">
-                        <p>2в1</p>
-                    </div>
-                    <p>Комплекс Микоцин <strong>устраняет зуд, неприятный запах</strong> и возвращает эстетичный вид</p>
+                <div class="title">
+                    <h1>Комплексное избавление от грибка — </h1>
+                    <span class="underline orange">изнутри</span>
+                    <span class="underline">и</span>
+                    <span class="underline green">снаружи</span>
                 </div>
-                <div class="tablets">
-                    <div class="circle">
-                        <p>1</p>
+                <div class="points">
+                    <div class="point">
+                        <div class="circle">
+                        </div>
+                        <p>Комплекс Микоцин <strong>устраняет зуд, неприятный запах</strong> и возвращает эстетичный вид</p>
                     </div>
-                    <p><span>Таблетки</span> Микоцин <strong>уничтожают все виды грибка</strong> на ногтях и коже</p>
-                </div>
-                <div class="gel">
-                    <div class="circle">
-                        <p>2</p>
+                    <div class="point">
+                        <div class="circle">
+                        </div>
+                        <p><span>Таблетки</span> Микоцин <strong>уничтожают все виды грибка</strong> на ногтях и коже</p>
                     </div>
-                    <p><span>Гель</span> Микоцин <strong>восстанавливает кожу</strong> и создает на ней <strong>защитный
-                        барьер</strong></p>
+                    <div class="point">
+                        <div class="circle">
+                        </div>
+                        <p><span>Гель</span> Микоцин <strong>восстанавливает кожу</strong> и создает на ней <strong>защитный
+                            барьер</strong></p>
+                    </div>
                 </div>
             </div>
             <div class="order-form">
@@ -60,30 +77,39 @@
                     <img src="build/images/car.png" alt="">
                     <p>Бесплатно</p>
                 </div>
-                <p>Успейте заказать со скидкой <span>до 10.09.2018</span></p>
-                <div class="prices">
-                    <div class="price old-price">
-                        <p>старая цена</p>
-                        <div class="cross">
-                            <p>918₽</p>
+                <div class="content">
+                    <p>Успейте заказать со скидкой<br> <span>до 10.09.2018</span></p>
+                    <div class="prices">
+                        <div class="price old-price">
+                            <p class="old">старая цена</p>
+                            <div class="cross">
+                                <p>918₽</p>
+                                <div class="mark">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price new-price">
+                            <p>новая цена</p>
+                            <p>459₽</p>
                         </div>
                     </div>
-                    <div class="price new-price">
-                        <p>новая цена</p>
-                        <p><strong>459₽</strong></p>
+<!--                    <img src="build/images/arrow.png" alt="arrow">-->
+                    <form class="form" method="post">
+                        <input id="man" type="text" placeholder="Имя">
+                        <input id="phone" type="text" placeholder="Телефон">
+                        <button id="button" type="submit"><span>Заказать</span><br>со скидкой</button>
+                    </form>
+                    <p class="lost">Осталось <span id="green">10</span> упаковок со скидкой</p>
+                    <div class="protect">
+                        <img src="build/images/shield.png" alt="shield">
+                        <p>Ваши данные защищены!</p>
                     </div>
                 </div>
-                <img src="build/images/arrow.png" alt="arrow">
-                <form method="post">
-                    <input type="text" placeholder="Имя">
-                    <input type="text" placeholder="Телефон">
-                    <button type="submit"><strong>Заказать</strong><br><b>со скидкой</b></button>
-                </form>
-                <p>Осталось <span>10</span> упаковок со скидкой</p>
-                <div class="protect">
-                    <img src="build/images/shield.png" alt="shield">
-                    <p>Ваши данные защищены!</p>
-                </div>
+            </div>
+        </div>
+        <div class="background-img">
+            <div class="image"></div>
+            <div class="translucent-block">
             </div>
         </div>
     </section>
@@ -177,9 +203,109 @@
         </div>
     </section>
     <section class="fourth">
-        <img src="build/images/great-circle.png" alt="circle">
-        <h1>Почему таблетки <span>Микоцин</span> от грибка так эффективны?</h1>
-        <p>Другие средства не дают полную защиту от грибковых инфекций и могут быть опасны</p>
+        <div class='container'>
+            <img src="build/images/great-circle.png" alt="circles"
+                 class='circles'>
+            <h2>
+                Почему таблетки <span>Микоцин</span> от грибка <br>
+                так эффективны?
+            </h2>
+            <p>Другие средства не дают полную защиту от грибковых инфекций и
+                могут быть опасны</p>
+            <div class='tiles'>
+                <div class='tile-container'>
+                    <div class='tile red-border'>
+                        <div class='img-container red-border'>
+                            <img src='build/images/creams-and-ointments.png'
+                                 alt='creams and ointments'>
+                        </div>
+                        <div class='text-container'>
+                            <p class='text-title'>Кремы и мази</p>
+                            <p class='text'><span>Не лечат грибок, потому
+                            что не
+                            проникают в ногтевую пластину.</span> Только
+                                временно
+                                избавляют от симптомов инфекций. Могут вызвать
+                                сильную аллергию и раздражения на коже.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='tile-container'>
+                    <div class='tile red-border'>
+                        <div class='img-container red-border'>
+                            <img src='build/images/folk-methods.png'
+                                 alt='folk methods'
+                                 class='folk-methods-img'>
+                        </div>
+                        <div class='text-container'>
+                            <p class='text-title'>Народные методы</p>
+                            <p class='text'>Помогают только в редких случаях.
+                                <span>Могут
+                            причинить
+                            вред коже и ногтям.</span> Не предотвращают
+                                повторные
+                                заражения грибком.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='tile-container'>
+                    <div class='tile green-border'>
+                        <div class='img-container green-border'>
+                            <img src='build/images/pills.png'
+                                 alt='pills'></div>
+                        <div class='text-container'>
+                            <p class='text-title'>Таблетки</p>
+                            <p class='text'><span>Действуют против всех видов
+                            грибков.</span> Быстро снимают
+                                неприятные симптомы и уничтожают инфекцию
+                                изнутри
+                                вне зависимости от области заражения грибком.
+                                Надолго защищают от повторных заражений.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </section>
+    <section class="fifth">
+        <div class='container'>
+            <img src="build/images/circles.png" alt="circles" class='circles'>
+            <h2>Как применять <span>Микоцин</span></h2>
+            <div class='glass-with-product-and-instruction'>
+
+                <div class='glass-with-product'>
+                    <img src='build/images/glass-and-product.png'
+                         alt='glass and product'>
+                </div>
+
+                <div class='instruction'>
+                    <div class='img-and-paragraph mb-15'>
+                        <img src='build/images/pills-in-circle.png'
+                             alt='pills in circle'>
+                        <p><span class='green-dash'>&nbsp;</span><br>
+                            Принимать по 1 таблятке <br>
+                            утром и вечером</p>
+                    </div>
+                    <div class='img-and-paragraph mb-20'>
+                        <img src='build/images/glass-in-circle.png'
+                             alt='glass in circle'>
+                        <p>
+                            <span class='green-dash'>&nbsp;</span><br>
+                            Запивать стаканом воды</p>
+                    </div>
+                    <div class='img-and-paragraph'>
+                        <img src='build/images/calendar-in-circle.png'
+                             alt='calendar in circle'>
+                        <p><span class='green-dash'>&nbsp;</span><br>
+                            Курс – от 30 дней</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 </main>
 <script src="build/js/index.js"></script>

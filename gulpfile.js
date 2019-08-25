@@ -8,7 +8,7 @@ const pipeline = require('readable-stream').pipeline;//merging all .pipe into pi
 const cleanCSS = require('gulp-clean-css');//write css in one line
 const browserSync = require('browser-sync').create();//local server
 const autoprefixer = require('gulp-autoprefixer');//Add prefix for new properties
-const  bable = require('gulp-babel');//compiler js ES6 into ES5
+const bable = require('gulp-babel');//compiler js ES6 into ES5
 const imagemin = require('gulp-imagemin');
 
 
@@ -37,7 +37,6 @@ function addStyles(paths, outputFilename) {
 function styles() {
     return addStyles([
         './node_modules/normalize.css/normalize.css',
-        './node_modules/hamburgers/dist/hamburgers.css',
         './app/styles/index.less',
     ],'index.css')
 }
