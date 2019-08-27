@@ -1,1 +1,1 @@
-{"version":3,"sources":["index.js"],"names":["dimaaaa","console","log"],"mappings":"AAAA,IAAKA,QAAU,GACfC,QAAQC,IAAIF,SACZC,QAAQC,IAAIF,QAAU","file":"index.js","sourcesContent":["let  dimaaaa = 25;\r\nconsole.log(dimaaaa);\r\nconsole.log(dimaaaa + 10);"]}
+{"version":3,"sources":["index.js"],"names":["console","log"],"mappings":"AAAAA,QAAQC,IAAI","file":"index.js","sourcesContent":["console.log(1);"]}
