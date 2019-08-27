@@ -37,7 +37,8 @@ function addStyles(paths, outputFilename) {
 function styles() {
     return addStyles([
         './node_modules/normalize.css/normalize.css',
-        './app/styles/*.less',
+        './app/styles/index.less',
+        './app/styles/media.less',
     ],'index.css')
 }
 

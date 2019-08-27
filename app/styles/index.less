@@ -30,7 +30,18 @@ header {
       align-items: center;
       margin-right: 87px;
 
+      #great-img {
+        animation: rotate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
       #image {
+        animation: rotate-2;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
         margin-right: 17px;
       }
 
@@ -1025,3 +1036,19 @@ main {
   }
 }
 
+@keyframes rotate {
+  from  {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-2 {
+  from  {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

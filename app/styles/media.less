@@ -34,6 +34,7 @@
     .first {
       background-color: #edf7f9;
       height: auto;
+      margin-bottom: 20px;
 
       .container {
         padding: 10px 0 10px 0;
@@ -48,14 +49,14 @@
         .info-block {
           padding: 0 10px 0 10px;
           height: auto;
-          margin: 0 0 40px 0;
+          margin: 0 0 20px 0;
           text-align: center;
 
           .title {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
 
             h1 {
               margin-right: 0;
@@ -82,6 +83,10 @@
         .pills {
           display: flex;
           background-color: white;
+          margin-bottom: 20px;
+        }
+        .order-form {
+          margin-top: 0;
         }
       }
 
@@ -90,10 +95,53 @@
       }
     }
     .second {
+      height: auto;
       padding: 0;
-      h2 + p {
-        font-size: 1rem;
-        text-align: center;
+      .container {
+        h2 + p {
+          font-size: 1rem;
+          text-align: center;
+        }
+        .effects {
+          margin-bottom: 0;
+          .example {
+            text-align: center;
+            margin-bottom: 40px;
+            &:first-child {
+              .top-block{
+                &:after {
+                  top: -20px;
+                  left: 50px;
+                }
+              }
+            }
+            &:nth-child(2) {
+              .top-block{
+                &:after {
+                  top: -20px;
+                  left: 50px;
+                }
+              }
+            }
+            &:last-child {
+              .top-block{
+                &:after {
+                  top: -20px;
+                  left: 50px;
+                }
+              }
+            }
+            .top-block {
+              flex-direction: column;
+            }
+            .line:after {
+              left: 120px;
+            }
+          }
+        }
+        .statistic {
+          padding: 25px;
+        }
       }
     }
   }
