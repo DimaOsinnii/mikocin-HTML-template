@@ -105,7 +105,8 @@
       padding: 0;
 
       .container {
-        padding: 20px 0 20px 0;
+        padding: 20px;
+
         h2 + p {
           font-size: 1rem;
           text-align: center;
@@ -118,6 +119,7 @@
           .example {
             text-align: center;
             margin-bottom: 40px;
+            padding: 0 20px;
 
             &:first-child {
               .top-block {
@@ -149,6 +151,9 @@
             .top-block {
               flex-direction: column;
             }
+            .top-block+p {
+              width: auto;
+            }
 
             .line:after {
               left: 120px;
@@ -170,9 +175,13 @@
     .third {
       height: auto;
       margin-bottom: 0;
+      br {
+        display: none;
+      }
 
       .container {
         padding: 20px 0 20px 0;
+
         .resources {
           flex-direction: column;
 
@@ -193,9 +202,11 @@
           margin: 0 20px;
           font-size: 0.8rem;
           padding: 15px;
+
           &:after {
             font-size: 15px;
           }
+
           &:before {
             font-size: 50px;
           }
@@ -205,21 +216,34 @@
 
     .fourth {
       height: auto;
+      br {
+        display: none;
+      }
+
       .container {
         .block-container {
           margin-bottom: 20px;
           justify-content: center;
+
           .block {
             height: 280px;
             width: 90%;
+            padding: 60px 20px 0 20px;
             margin: 0 0 60px 0;
+
+            h3 {
+              margin-bottom: 10px;
+            }
+
             p {
               font-size: 0.8rem;
             }
           }
         }
+
         .question {
-          margin-bottom: 20px;
+          margin: 0 20px 20px 20px;
+
           p {
             font-size: 1rem;
           }
@@ -229,17 +253,22 @@
 
     .fifth {
       height: auto;
+
       .container {
         padding: 20px;
         margin-top: 0;
+
         .glass-with-product-and-instruction {
           .glass-with-product {
             display: none;
           }
+
           .instruction {
             margin: 0;
+
             .img-and-paragraph {
               flex-direction: column;
+
               p {
                 text-align: center;
                 margin: 20px 0 20px 0;
