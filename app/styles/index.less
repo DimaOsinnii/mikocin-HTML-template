@@ -105,9 +105,10 @@ main {
       .transparent-block {
         display: none;
         position: absolute;
+        border-bottom-right-radius: 43%;
         width: 100%;
         height: 620px;
-        background-color: #edf7f9;
+        background-color:#f1f6f7;
         z-index: 2;
         opacity: 0.8;
       }
@@ -264,6 +265,7 @@ main {
 
       .order-form {
         margin-top: 40px;
+        margin-right: 20px;
         width: 270px;
         height: 555px;
         background-color: white;
@@ -482,20 +484,20 @@ main {
       height: 100%;
 
       .image {
-        z-index: 0;
+        z-index: 1;
         position: absolute;
-        left: 50%;
-        right: 57%;
+        width: 100%;
         height: 100%;
-        background-image: url("../images/background.png");
+        background-image: url("../images/background-opacity.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left;
       }
 
       .translucent-block {
-        z-index: 1;
+        z-index: -1;
         position: absolute;
+        opacity: 0.1;
         width: 100%;
         height: 100%;
         background-color: #edf7f9;
@@ -514,7 +516,7 @@ main {
 
   .second {
     height: 950px;
-    padding: 147px 0 57px 0;
+    padding: 147px 20px 57px 20px;
     display: flex;
     justify-content: center;
 
@@ -784,6 +786,7 @@ main {
 
       .conclusion {
         padding: 30px 96px;
+        margin: 0 20px;
         text-align: center;
         font-size: 21px;
         border: 3px solid #f4d3bb;
@@ -860,7 +863,6 @@ main {
 
       .block-container {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 28px;
 
@@ -947,6 +949,7 @@ main {
 
       .question {
         height: 100px;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
