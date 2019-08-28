@@ -543,35 +543,14 @@ main {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         margin-bottom: 60px;
 
         .example {
+          width: 33.3333333%;
+          min-width: 320px;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-
-          &:first-child .top-block:after {
-            content: url("../images/border-1.png");
-            position: absolute;
-            top: -20px;
-            left: -20px;
-          }
-
-          &:nth-child(2) .top-block:after {
-            content: url("../images/border-2.png");
-            position: absolute;
-            top: -20px;
-            left: -20px;
-          }
-
-          &:last-child .top-block:after {
-            content: url("../images/border-3.png");
-            position: absolute;
-            top: -20px;
-            left: -20px;
-          }
-
           .top-block {
             position: relative;
             display: flex;
@@ -581,7 +560,10 @@ main {
             font-weight: 500;
             margin-bottom: 54px;
             line-height: 1.2;
-
+            .top-block-img-container {
+              position: relative;
+              width: auto;
+            }
             img {
               margin-right: 20px;
             }
@@ -594,18 +576,39 @@ main {
             line-height: 1.5;
           }
 
-          .line {
-            position: relative;
 
-            &:after {
-              content: "";
-              width: 50px;
-              height: 3px;
-              position: absolute;
-              top: -20px;
-              left: 0;
-              background-color: #becbd8;
-            }
+          &:first-child .top-block .top-block-img-container:after {
+            content: url("../images/border-1.png");
+            position: absolute;
+            top: -20px;
+            left: -20px;
+          }
+
+          &:nth-child(2) .top-block .top-block-img-container:after {
+            content: url("../images/border-2.png");
+            position: absolute;
+            top: -20px;
+            left: -20px;
+          }
+
+          &:last-child .top-block .top-block-img-container:after {
+            content: url("../images/border-3.png");
+            position: absolute;
+            top: -20px;
+            left: -20px;
+          }
+        }
+        .line {
+          position: relative;
+
+          &:after {
+            content: "";
+            width: 50px;
+            height: 3px;
+            position: absolute;
+            top: -20px;
+            left: 0;
+            background-color: #becbd8;
           }
         }
       }
